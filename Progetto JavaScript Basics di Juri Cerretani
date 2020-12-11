@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Progetto</title>
+  </head>
+  <body>
+    <div>0</div>
+    <button id='meno'>-</button>
+    <button id='piu'>+</button>
+
+    <script>
+      const contatore = document.querySelector('div');
+      const btnPiu = document.getElementById('piu');
+      const btnMeno = document.getElementById('meno');
+      let num = 0;
+
+      btnPiu.addEventListener('click',aggiungi);
+      btnMeno.addEventListener('click',sottrai);
+
+      function aggiungi(){
+        contatore.innerHTML = ++num;
+        console.log(num);
+      }
+
+      function sottrai(){
+        contatore.innerHTML = --num;
+        console.log(num);
+      }
+    </script>
+  </body>
+</html>
