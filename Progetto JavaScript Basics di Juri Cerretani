@@ -20,12 +20,10 @@
 
       function aggiungi(){
         contatore.innerHTML = ++num;
-        console.log(num);
       }
 
       function sottrai(){
         contatore.innerHTML = --num;
-        console.log(num);
       }
     </script>
   </body>
